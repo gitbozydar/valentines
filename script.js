@@ -33,12 +33,16 @@ yesBtn.addEventListener("click", () => {
   createAudio.play();
 });
 
-noBtn.addEventListener("mouseover", () => {
-  noBtn.disabled = true;
-});
+// noBtn.addEventListener("mouseover", () => {
+//   noBtn.disabled = true;
+// });
 
-noBtn.addEventListener("mouseout", () => {
-  noBtn.disabled = false;
+// noBtn.addEventListener("mouseout", () => {
+//   noBtn.disabled = false;
+// });
+
+noBtn.addEventListener("click", () => {
+  handelSize();
 });
 
 const createCanvas = () => {
@@ -54,4 +58,24 @@ const buildHappyHeader = () => {
   const headerOfHappy = document.createElement("h2");
   headerOfHappy.innerHTML = "Yaaaaaaay!1!1!❤️‍🔥❤️";
   happyHeader.appendChild(headerOfHappy);
+};
+let scaleOfYesBtn = 1;
+let scaleOfNoBtn = 1;
+let counter = 0;
+const handelSize = () => {
+  scaleOfYesBtn += 0.1;
+  scaleOfNoBtn -= 0.1;
+  console.log("bok");
+  yesBtn.style.transform = `scale(${scaleOfYesBtn})`;
+  noBtn.style.transform = `scale(${scaleOfNoBtn})`;
+  if (counter === 0) {
+    noBtn.innerHTML = "🥺aha?🥺";
+    counter += 1;
+  } else if (counter === 1) {
+    noBtn.innerHTML = "AAAHAA, ok to pa tera😣";
+    counter += 1;
+  } else if (counter === 2) {
+    yesBtn.innerHTML = "Mam cię 😈";
+    noBtn.remove();
+  }
 };

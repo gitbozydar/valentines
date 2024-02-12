@@ -7,6 +7,7 @@ body {
   background-color: rgb(255, 198, 207);
   font-family: "Cinzel", serif;
   padding: 1rem;
+  height: inherit;
 }
 *,
 *::before,
@@ -18,11 +19,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
+  height: inherit;
+  margin-bottom: 4rem;
 }
 h1 {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
   text-align: center;
 }
@@ -45,15 +48,17 @@ h1 {
   box-shadow: none;
   border: 1px solid black;
   border-radius: 1rem;
-  scale: 1;
-  transition: 0.5s;
 }
 .buttons-container button:hover {
-  scale: 1.1;
   cursor: pointer;
+}
+#yes-btn {
+  scale: 1;
 }
 .new-wrapper {
   transform: scale(1);
+  height: inherit;
+  justify-content: center;
   animation: pulse 0.375s infinite;
 }
 
@@ -85,4 +90,9 @@ h1 {
 #confetti {
   width: 0;
   height: 0;
+}
+.front-cat {
+  border: none;
+  position: absolute;
+  bottom: 0;
 }
