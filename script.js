@@ -52,6 +52,6 @@ const buildHappyHeader = () => {
   happyHeader.className = "happy-header";
   newWrapper.appendChild(happyHeader);
   const headerOfHappy = document.createElement("h2");
-  headerOfHappy.innerHTML = "Yaaaaaaay!1!!!111!";
+  headerOfHappy.innerHTML = "Yaaaaaaay!1!1!❤️‍🔥❤️";
   happyHeader.appendChild(headerOfHappy);
 };
