@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  overflow-y: scroll;
 }
 body {
   box-sizing: border-box;
@@ -58,9 +59,10 @@ h1 {
 }
 .new-wrapper {
   transform: scale(1);
-  height: inherit;
+  max-width: 50%;
   justify-content: center;
   animation: pulse 0.375s infinite;
+  align-items: center;
 }
 
 .happy-header {
