@@ -45,6 +45,7 @@ h1 {
   font-family: inherit;
   width: 70%;
   background-color: rgb(255, 154, 170);
+  color: black;
   box-shadow: none;
   border: 1px solid black;
   border-radius: 1rem;
